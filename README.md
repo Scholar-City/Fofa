@@ -12,8 +12,11 @@ Fofa高级会员 可以爬取1000页，可以把page设置成1000
 
 [fofa_config]
 email = 20200606@163.com
+
 api = da123dwcdaeb96c922c9da539fb93597
+
 keyword = host='baidu.com'
+
 page = 2
 
 
