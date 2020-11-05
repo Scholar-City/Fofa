@@ -14,6 +14,7 @@ class Fofa:
 	api = ''
 	keyword = ''
 	page = ''
+	size = ''
 	lis = []
 	def __init__(self):
 		config = configparser.ConfigParser()
@@ -23,10 +24,11 @@ class Fofa:
 		keyword = config.get('fofa_config','keyword').encode()
 		self.keyword = base64.b64encode(keyword).decode()
 		self.page = config.get('fofa_config','page')
+		self.size = config.get('fofa_config','size')
 
 	def Request(self):
 		lis = []
-		url = 'https://fofa.so/api/v1/search/all?email={0}&key={1}&qbase64={2}&page={3}'.format(self.email,self.api,self.keyword,self.page)
+		url = 'https://fofa.so/api/v1/search/all?email={0}&key={1}&qbase64={2}&page={3}&size={4}'.format(self.email,self.api,self.keyword,self.page,self.size)
 		headers = {
 			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/14.0.835.163 Safari/535.1'
 		}
