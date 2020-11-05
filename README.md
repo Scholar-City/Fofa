@@ -3,10 +3,9 @@
 Fofa_Query.py
 
 使用环境：python3
-
-
-
 Fofa高级会员 获取10000 条 把 size设置成1w即可，默认100条
+
+
 
 配置文件 config.ini
 
@@ -21,6 +20,8 @@ keyword = host='baidu.com'
 page = 2
 
 size = 10000
+
+
 
 
 
