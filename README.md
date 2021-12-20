@@ -15,7 +15,7 @@ email = 20200606@163.com
 
 api = da123dwcdaeb96c922c9da539fb93597
 
-keyword = host='baidu.com'
+keyword = aG9zdD0nYmFpZHUuY29tJw==
 
 page = 2
 
@@ -24,7 +24,8 @@ size = 10000
 
 
 
-
+把关键字用base64编码后，再放上去。这里这样做是为了防止中文编码的时候出错。
+例如 百度，直接把百度base64编码即可 55m+5bqm
 生成出来的文件名是当前时间戳
 
 
