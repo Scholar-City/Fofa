@@ -21,8 +21,7 @@ class Fofa:
 		config.read('config.ini')
 		self.email = config.get('fofa_config','email')
 		self.api = config.get('fofa_config','api')
-		keyword = config.get('fofa_config','keyword').encode()
-		self.keyword = base64.b64encode(keyword).decode()
+		self.keyword = config.get('fofa_config','keyword')
 		self.page = config.get('fofa_config','page')
 		self.size = config.get('fofa_config','size')
 
